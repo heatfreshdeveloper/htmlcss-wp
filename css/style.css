@@ -9,7 +9,7 @@ body {
 }
 
 .container1 {
-    height: 150px;
+    height: 160px;
     width: 90%;
     margin: 20px auto;
 }
@@ -27,32 +27,55 @@ body {
 }
 
 .container2 {
-    height: 600px;
+    height: 470px;
     width: 90%;
-    position: relative;
     margin: 20px auto;
+}
+
+.container2-hero {
+    position: relative;
+}
+
+.container2-banner {
+    height: 450px;
+    overflow: hidden;
     border-radius: 25px;
 }
 
 .container2 img {
-    width: 100%;
-    height: 620px;
     object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
-.container2 h2 p {
+
+.container2-hero::after{  
+    position: absolute;
+    content: "";
+    display: block;  
+    border-radius: 25px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.199);
+}
+
+.container2-text {
     color: white;
     position: absolute;
-    width: 50px;
-    top: 20px;
-    left: 15px;
-    z-index: 1;
+    width: 550px;
+    bottom: 80px;
+    left: 50px;
+    z-index: 10;
 }
 
 .container-float {
-    background-color: rgb(0, 102, 255);
     width: 90%;
     margin: 20px auto;
+    position: relative;
 }
 
 .clearfix::after {
@@ -62,14 +85,12 @@ body {
   }
 
 .first-container {
-    background-color: rgb(156, 220, 250);
     height: 90px;
     width: 100%;
     margin-bottom: 20px;
 }
 
 .second-container {
-    background-color: rgb(156, 220, 250);
     height: 600px;
     width: 300px; 
     float: left;
@@ -77,8 +98,45 @@ body {
     margin-right: 15px;
 }
 
+.second-container-banner {
+    height: 300px;
+    width: 300px;
+    position: relative;
+    border-radius: 25px;
+    overflow: hidden;    
+}
+
+.second-container img {
+    width: 300px;
+    height: 300px;
+    display: block;
+
+}
+
+.second-container h4 {
+    padding: 10px 0;
+}
+
+.second-container-text {
+    width: 300px;
+    height: 300px;
+}
+
+.second-container-banner::after {
+    position: absolute;
+    content: "";
+    display: block;  
+    border-radius: 25px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.199);
+}
+
 .third-container {
-    background-color: rgb(156, 220, 250);
     height: 600px;
     width: 737px; 
     float: left;
@@ -86,17 +144,99 @@ body {
     margin-right: 15px;
 }
 
+.third-container-banner {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    border-radius: 25px;
+    overflow: hidden;    
+}
+
+.third-container img {
+    width: 100%;
+    height: 300px;
+    display: block;
+    object-fit: cover;
+}
+
+.third-container h4 {
+    padding: 10px 0;
+}
+
+.third-container-text {
+    width: 100%;
+    height: 500px;
+}
+
+.third-container-banner::after {
+    position: absolute;
+    content: "";
+    display: block;  
+    border-radius: 25px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.199);
+}
+
 .fourth-container {
-    background-color: rgb(156, 220, 250);
     height: 600px;
     width: 300px; 
     float: left;
     margin-bottom: 18px;
 }
 
+.fourth-container-banner {
+    height: 300px;
+    width: 300px;
+    position: relative;
+    border-radius: 25px;
+    overflow: hidden;      
+}
+
+.fourth-container img {
+    width: 300px;
+    height: 300px;
+    display: block;
+    object-fit: cover;
+}
+
+.fourth-container h4 {
+    padding: 10px 0;
+}
+
+.fourth-container-text {
+    width: 300px;
+    height: 300px;
+}
+
+.fourth-container-banner::after {
+    position: absolute;
+    content: "";
+    display: block;  
+    border-radius: 25px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.199);
+}
+
 .last-container {
-    background-color: rgb(101, 21, 175);
     height: 80px;
     width: 90%;
     margin: 20px auto;
+}
+
+.last-container p {
+    text-align: center;
+}
+
+.last-container span {
+    color: red;
 }
