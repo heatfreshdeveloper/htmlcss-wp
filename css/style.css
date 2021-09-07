@@ -4,11 +4,25 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 .container1 {
-    background-color: rgb(204, 79, 230);
-    height: 200px;
+    height: 150px;
     width: 90%;
     margin: 20px auto;
+}
+
+.container1 img {
+    width: 15%;
+}
+
+.container1 ul li {
+    list-style: none;
+    float: left;
+    padding: 15px;
+    margin-top: 15px;
 }
 
 .container2 {
